@@ -19,7 +19,7 @@ Add a Windows Server VM to my existing Proxmox lab and get it ready for administ
 | Network | VirtIO, bridge `vmbr0` |
 | Machine / firmware | Q35 / OVMF (UEFI) |
 | TPM | Version 2.0 |
-| Installation media | Windows Server Evaluation ISO and Fedora VirtIO driver ISO |
+| Installation media | Windows Server 2025 Evaluation ISO and Fedora VirtIO driver ISO |
 
 I started with 2 vCPU and 4 GiB RAM to keep the VM small on my 16 GiB host. I attached the VirtIO ISO so the drivers are available during setup and initial configuration.
 
@@ -35,8 +35,8 @@ I started with 2 vCPU and 4 GiB RAM to keep the VM small on my 16 GiB host. I at
 
 The Proxmox summary shows VM `105` running with 2 CPUs and a 64 GiB boot disk. The console displays **“Press Ctrl+Alt+Delete to unlock.”** This confirms that the installed system boots.
 
-## Open Items
+## Follow-up — 1 October 2026
 
-Ubuntu intercepted `Ctrl+Alt+Delete` from my physical keyboard, so completing the first login through the Proxmox console is the next step.
+Ubuntu initially intercepted `Ctrl+Alt+Delete` from my physical keyboard. The first login and initial Windows configuration have since been completed; see [Initial Windows Server configuration](02-initial-configuration.md).
 
-The Windows version and edition, installed drivers, guest agent, hostname, and network settings will be recorded after checking them in Windows.
+The installed edition is **Windows Server 2025 Standard Evaluation**. QEMU Guest Agent installation remains an open item.

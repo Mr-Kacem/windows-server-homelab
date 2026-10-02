@@ -1,0 +1,28 @@
+# Local credentials and private files
+/private/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Installation media, virtual disks, and VM backups
+*.iso
+*.qcow2
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.raw
+*.vma
+*.vma.*
+/backups/
+
+# Logs and temporary files
+*.log
+*.tmp
+*~
+.DS_Store
+Thumbs.db
