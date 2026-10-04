@@ -12,7 +12,7 @@ The host, storage, and Linux services are documented in my [proxmox-homelab](htt
 
 ## Progress
 
-Verified on **3 October 2026**:
+Progress as of **4 October 2026**:
 
 - [x] Install Windows Server and VirtIO drivers on Proxmox.
 - [x] Configure `DC01`, static IPv4, and Windows updates.
@@ -20,7 +20,10 @@ Verified on **3 October 2026**:
 - [x] Create the `lab.home.arpa` forest with Active Directory Domain Services and DNS.
 - [x] Verify domain services, DNS zones, and the LDAP SRV record.
 - [x] Create the `ad-ds-dns-ready` snapshot.
-- [ ] Create organizational units, users, and groups.
+- [x] Create organizational units, four test users, and department security groups.
+- [x] Verify users, groups, and group memberships with PowerShell.
+- [ ] Create the planned `ad-structure-ready` snapshot.
+- [ ] Create `WIN11-CLIENT01`, join the domain, and test a domain user login.
 - [ ] Practice Group Policy.
 
 **Open item:** QEMU Guest Agent installation remains unresolved; its option is disabled in Proxmox.
@@ -30,6 +33,7 @@ Verified on **3 October 2026**:
 - [VM creation and Windows Server installation](docs/01-vm-and-installation.md)
 - [Initial Windows Server configuration](docs/02-initial-configuration.md)
 - [Active Directory and DNS](docs/03-active-directory-and-dns.md)
+- [Organizational units, users, and groups](docs/04-organizational-units-users-and-groups.md)
 
 I add new documents as the lab grows. Each one records the goal, configuration choices, checks, and any troubleshooting. Scripts and configuration examples will be added when I use them.
 
