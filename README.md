@@ -14,7 +14,7 @@ The host, storage, and Linux services are documented in my [proxmox-home-lab](ht
 
 ## Progress
 
-Progress as of **7 October 2026**:
+Progress as of **8 October 2026**:
 
 - [x] Install Windows Server and VirtIO drivers on Proxmox.
 - [x] Configure `DC01`, static IPv4, and Windows updates.
@@ -30,7 +30,9 @@ Progress as of **7 October 2026**:
 - [x] Join the client to `lab.home.arpa` and verify a domain user login.
 - [x] Place the computer in `Company/Computers/Workstations` and verify its distinguished name.
 - [ ] Create the planned client snapshot `domain-joined-ready`.
-- [ ] Practice Group Policy.
+- [x] Create a user GPO linked to `Company/Users/IT` and verify Control Panel/Settings restrictions on the client.
+- [ ] Create the planned `DC01` snapshot `gpo-it-block-control-panel`.
+- [ ] Practice additional Group Policy settings.
 
 **Open items:**
 
@@ -45,6 +47,7 @@ Progress as of **7 October 2026**:
 - [Organizational units, users, and groups](docs/04-organizational-units-users-and-groups.md)
 - [Windows 11 client installation](docs/05-windows-11-client-installation.md)
 - [Windows 11 domain join and verification](docs/06-windows-11-domain-join.md)
+- [First Group Policy: Control Panel restriction](docs/07-first-group-policy.md)
 
 Each document records what I changed, how I checked it, and any issues. I add scripts and configuration examples when I use them.
 
