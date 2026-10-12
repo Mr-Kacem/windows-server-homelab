@@ -16,7 +16,7 @@ The host, storage, and Linux services are documented in my [proxmox-home-lab](ht
 
 ## Progress
 
-Progress as of **11 October 2026**:
+Progress as of **12 October 2026**:
 
 - [x] Install Windows Server with VirtIO drivers, static IPv4, and Windows updates.
 - [x] Verify the baseline and create the `windows-base-ready` snapshot.
@@ -33,6 +33,8 @@ Progress as of **11 October 2026**:
 - [x] Consolidate GPO scope, inheritance, precedence, account types, and the role of domain DNS.
 - [x] Create a computer GPO and verify its logon notice on `WIN11-CLIENT01`.
 - [x] Independently create a Sales user GPO and verify it with `LAB\luca.romano`.
+- [x] Configure Sales share permissions for `GG_Sales`; verify Luca can create files and Laura is denied access.
+- [ ] Practice NTFS inheritance and effective permissions.
 
 **Open items:**
 
@@ -49,6 +51,7 @@ Progress as of **11 October 2026**:
 - [Windows 11 domain join and verification](docs/06-windows-11-domain-join.md)
 - [First Group Policy: Control Panel restriction](docs/07-first-group-policy.md)
 - [Group Policy consolidation and practice](docs/08-group-policy-consolidation.md)
+- [Security groups and share permissions](docs/09-security-groups-and-share-permissions.md)
 
 Each document records what I changed, how I checked it, and any issues. I add scripts and configuration examples when I use them.
 
