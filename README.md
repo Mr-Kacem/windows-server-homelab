@@ -16,13 +16,13 @@ The host, storage, and Linux services are documented in my [proxmox-home-lab](ht
 
 ## Progress
 
-Progress as of **12 October 2026**:
+Progress as of **13 October 2026**:
 
 - [x] Install Windows Server with VirtIO drivers, static IPv4, and Windows updates.
 - [x] Verify the baseline and create the `windows-base-ready` snapshot.
 - [x] Create `lab.home.arpa` with AD DS and DNS; verify services, DNS zones, and the LDAP SRV record.
 - [x] Create the `ad-ds-dns-ready` snapshot.
-- [x] Create OUs, four test users, and department security groups; verify memberships.
+- [x] Create OUs, four initial test users, and department security groups; verify memberships.
 - [ ] Create the planned `ad-structure-ready` snapshot.
 - [x] Install and configure Windows 11 client VM `106` with VirtIO drivers, a local account, and domain DNS.
 - [x] Join the client to `lab.home.arpa` and verify a domain user login.
@@ -34,7 +34,9 @@ Progress as of **12 October 2026**:
 - [x] Create a computer GPO and verify its logon notice on `WIN11-CLIENT01`.
 - [x] Independently create a Sales user GPO and verify it with `LAB\luca.romano`.
 - [x] Configure Sales share permissions for `GG_Sales`; verify Luca can create files and Laura is denied access.
-- [ ] Practice NTFS inheritance and effective permissions.
+- [x] Isolate HR/Payroll permissions with `GG_HR_Payroll` and verify Effective Access and client access.
+- [x] Independently create Sofia Conti, add her to `GG_HR`, and verify Payroll access is denied.
+- [ ] Map network shares automatically with Group Policy Preferences.
 
 **Open items:**
 
@@ -52,6 +54,7 @@ Progress as of **12 October 2026**:
 - [First Group Policy: Control Panel restriction](docs/07-first-group-policy.md)
 - [Group Policy consolidation and practice](docs/08-group-policy-consolidation.md)
 - [Security groups and share permissions](docs/09-security-groups-and-share-permissions.md)
+- [NTFS inheritance and Effective Access](docs/10-ntfs-inheritance-and-effective-access.md)
 
 Each document records what I changed, how I checked it, and any issues. I add scripts and configuration examples when I use them.
 
